@@ -106,7 +106,7 @@ RUN chmod -R 777 /home/data
 RUN R -e "BiocManager::install(c('shortRNAhub/shortRNA', 'msa'))"
 RUN R -e "BiocManager::install(c('diffUTR'))"
 RUN mamba install -c bioconda fastqc multiqc -y
-RUN mamba install -c bioconda fastqc multiqc -y
+RUN mamba install -c bioconda sambamba -y
 RUN R -e "BiocManager::install(c('dupRadar'))"
 
 
